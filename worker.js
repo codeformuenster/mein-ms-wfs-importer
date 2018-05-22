@@ -3,7 +3,7 @@
 const request = require('request-promise-native'),
   queue = require('async/queue');
 
-const { 'elasticsearch-url': baseUrl, 'wfs-source-url': eSurl } = require('./confighelper');
+const { 'wfs-source-url': baseUrl, 'elasticsearch-url': eSurl } = require('./confighelper');
 
 const parameters = 'REQUEST=GetFeature&SERVICE=WFS&VERSION=2.0.0&OUTPUTFORMAT=GEOJSON&EXCEPTIONS=XML&MAXFEATURES=10000&SRSNAME=EPSG:4326'
 
